@@ -52,7 +52,7 @@ jobs:
 
       # 827451556797.dkr.ecr.ap-northeast-1.amazonaws.com/oaw-sand-aurora_batch
       - name: Set env (develop)
-        if: github.ref_name == 'develop'
+        if: github.ref_name == 'main'
         run: |
           echo "ENV=dev" >> $GITHUB_ENV
           echo "AWS_ACCOUNT_ID=827451556797" >> $GITHUB_ENV

@@ -33,9 +33,7 @@ jobs:
   push-to-ecr:
 
     if : >-
-      github.ref_name == 'dev' ||
-      github.ref_name == 'stg' ||
-      github.ref_name == 'prod'
+      github.ref_name == 'main'
 
     runs-on: ubuntu-latest
     timeout-minutes: 10
